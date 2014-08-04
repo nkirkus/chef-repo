@@ -1,0 +1,61 @@
+#
+# Cookbook Name:: iwatch
+# Recipe:: default
+#
+# Copyright 2008-2009, Opscode, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+package "iwatch"
+
+service "iwatch" do
+  service_name "iwatch"
+  supports value_for_platform(
+    "debian" => { "default" => [ :restart, :reload, :status ] },
+    "ubuntu" => {
+      "8.04" => [ :restart, :reload ],
+      "default" => [ :restart, :reload, :status ]
+    },
+    "default" => { "default" => [:restart, :reload ] }
+  )
+  #action [ :enable, :start ]
+  action [ :enable ]
+end
+
+template "iwatch.xml" do
+  case node[:platform]
+  when "ubuntu", "debian"
+    path "/etc/iwatch/iwatch.xml"
+  end
+  source "iwatch.xml.erb"
+  owner "root"
+  group "root"
+  mode 0600
+  variables({
+    :config  => node[:iwatch][:config]
+  })
+  notifies :restart, "service[iwatch]", :delayed
+end
+
+template "iwatch" do
+  case node[:platform]
+  when "ubuntu", "debian"
+    path "/etc/default/iwatch"
+  end
+  source "iwatch.erb"
+  owner "root"
+  group "root"
+  mode 0600
+  notifies :restart, "service[iwatch]", :delayed
+end

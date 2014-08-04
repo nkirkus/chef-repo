@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!DOCTYPE config SYSTEM "/etc/iwatch/iwatch.dtd" >
+
+<% if @config != nil %>
+<config>
+  <guard email="<%= @config[:guard_email] %>" name="<%= @config[:guard_name] %>"/>
+  <% if @config[:watchlists] != nil %>
+    <% keys = @config[:watchlists].keys.sort %>
+    <% keys.each do |key| %>
+  <watchlist>
+    <title><%= key %></title>
+    <contactpoint email="<%= @config[:watchlists]["#{key}"][:contact_email] %>" name="<%= @config[:watchlists]["#{key}"][:contact_name] %>"/>
+      <% if @config[:watchlists]["#{key}"][:paths] != nil %>
+        <% paths = @config[:watchlists]["#{key}"][:paths].keys %>
+        <% paths.each do |path| %>
+          <% options = "" %>
+          <% opts = @config[:watchlists]["#{key}"][:paths]["#{path}"].keys.sort %>
+          <% opts.each do |opt| %>
+            <% options = options + " #{opt}=" + '"' + @config[:watchlists]["#{key}"][:paths]["#{path}"]["#{opt}"] + '"' %>
+          <% end %>
+    <path<%= options %>><%= path %></path>
+        <% end %>
+      <% end %>
+  </watchlist>
+    <% end %>
+</config>
+  <% end %>
+<% end %>
