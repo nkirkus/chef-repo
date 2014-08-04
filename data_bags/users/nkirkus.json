@@ -1,0 +1,14 @@
+{
+  "groups": [
+    "sysadmin"
+  ],
+  "comment": "Noah Kirkus",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIAHTxquocBBghn6x16BIoZldwIPJn3/mAY/vjclJoVPM4tZfbw0IJFaJPFQ7OeRHUVKHgUGq7BAdAGFKdDGT2TjBeGZYNpQNAeyTpsroPMMGkBx3WXSYYZhV5APN6BgwBkwhudb7jHds0FflP7wVGHErTtBYqJRh/DHTSgXQDBpX6zxcQRaLFRr4ABwPVRPH+GH6tjUCSwlxigfRk9VIg386UVswclrkDsjVmEGVu+fwV5LhWUmXZJJwrJ8iB02inDRaJQRoOQ+0XJPizRuYcTVOR+U01oM2fczuRTks+E2cFAkr52STo5qNNTUfJF4ByJcKgoFNx0fkXbH4wpeRJ noah",
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSE0pqvTvny4dsR0k+5MEqsacrJkg+EL3/yHfrjQvXsVXl6t7HAbjz1f082HqQgXsCQ1ahEG31dDaK4gbM+vBCIPURz+PUv087+mxUIJLn/PKyFuzVI03hV7OlceCId0qLnHnvsppGi92rKQ2stuGBWgryl/T8/tl/oF/geEkHZoXZ5gujoVE8Kooq8zGMOQuupprqQIRQcBZyaa/hT+D9D5espxETjs6jHnWJvEJQgGlDh/WvrDqVAyNsYXVfl9MI13zobu/yWbAoS8itE7CP/2J/DibK5l/5MssFJNiGs739UGErNN4V9mkloUmUXxdp9KJ5xMDJtIL2usDV80Sr nkirkus"
+  ],
+  "uid": 4099,
+  "id": "nkirkus",
+  "home_dir": "/home/nkirkus",
+  "shell": "/bin/bash"
+}
