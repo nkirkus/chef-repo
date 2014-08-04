@@ -127,7 +127,7 @@ end
 
 # General settings
 default['apache']['listen_addresses']  = %w[*]
-default['apache']['listen_ports']      = %w[80]
+default['apache']['listen_ports']      = %w[8080]
 default['apache']['contact']           = 'ops@example.com'
 default['apache']['timeout']           = 300
 default['apache']['keepalive']         = 'On'
