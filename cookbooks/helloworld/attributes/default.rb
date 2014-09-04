@@ -1,3 +1,5 @@
 # This is an example Chef attributes file
  
-default['helloworld']['content'] = 'hello world'
+default['helloworld']['place'] = 'Minnesota'
+
+default['helloworld']['encore'] = false
