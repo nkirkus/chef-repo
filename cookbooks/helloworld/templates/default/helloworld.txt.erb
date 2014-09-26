@@ -6,7 +6,7 @@ Hello <%= node['helloworld']['place'] %>!
 <% if node['cpu']['total'] == 1 -%>
 This computer has <%= node['cpu']['total'] %> CPU!
 <% else -%>
-This computer has <%= node['cpu']['total'] %> CPU!
+This computer has <%= node['cpu']['total'] %> CPUs!
 <% end -%>
  
 <%= render "ipaddress.erb" -%>
