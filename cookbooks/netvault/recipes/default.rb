@@ -1,53 +1,46 @@
+###
 
 
 package 'libaio1' do
-	action :install
+  action: install
 end
 
 package 'libstdc++5' do
-	action :install
-end
-
-package 'unzip' do
-    action :install
+  action: install
 end
 
 directory "/var/lock/subsys" do
-	owner 'root'
-	group 'root'
-	mode '0755'
-	action :create
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action: create
 end
 
 directory "/root/NVB" do
-    owner 'root'
-    group 'root'
-    mode '0755'
-    action :create
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action: create
 end
 
 link "/usr/lib64" do
-    to "/usr/lib"
+  to "/usr/lib"
 end
 
-remote_file "/root/NetVault-Backup-Distribution-for-Linux-x86-Pure-64-bit-Build_100.zip" do
-	source 'https://s3.amazonaws.com/pharmmd-public/NetVault-Backup-Distribution-for-Linux-x86-Pure-64-bit-Build_100.zip'
-end
+filename = "netvault-R2014APR29-SECRETARIAT-V10-Linux-Pure64-ClientOnly.tar.gz"
 
-filename = "NetVault-Backup-Distribution-for-Linux-x86-Pure-64-bit-Build_100.zip"
-
-execute "unzip-filename" do
-    command "yes | unzip -j /root/#{filename} -d /root/NVB/"
+remote_file "/root/#{filename}" do
+  source 'https://s3.amazonaws.com/pharmmd-public/' + filename
 end
 
 execute "untar-filename" do
-    command "yes | tar -xvzf /root/NVB/netvault-R2014APR29-SECRETARIAT-V10-Linux-Pure64-ClientOnly.tar.gz -C /root/NVB/"
+  command "yes | tar -xvzf /root/#{filename} -C /root/"
 end
 
-template "/root/NVB/netvault/responsefile" do
-    source 'responsefile.erb'
+template "/root/netvault/responsefile" do
+  source 'responsefile.erb'
 end
 
 execute "install-netvault" do
-    command "cd /root/NVB/netvault/; bash install responsefile"
+  command "cd /root/netvault/; bash install responsefile"
 end
