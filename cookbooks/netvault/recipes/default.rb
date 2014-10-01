@@ -2,25 +2,25 @@
 
 
 package 'libaio1' do
-  action: install
+  action :install
 end
 
 package 'libstdc++5' do
-  action: install
+  action :install
 end
 
 directory "/var/lock/subsys" do
   owner 'root'
   group 'root'
   mode '0755'
-  action: create
+  action :create
 end
 
 directory "/root/NVB" do
   owner 'root'
   group 'root'
   mode '0755'
-  action: create
+  action :create
 end
 
 link "/usr/lib64" do
