@@ -1,3 +1,4 @@
+name              "netvault"
 maintainer        "PharmMD"
 maintainer_email  "admins@pharmmd.com"
 license           "Apache 2.0"
