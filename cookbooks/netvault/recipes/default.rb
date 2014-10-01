@@ -16,13 +16,6 @@ directory "/var/lock/subsys" do
   action :create
 end
 
-directory "/root/NVB" do
-  owner 'root'
-  group 'root'
-  mode '0755'
-  action :create
-end
-
 link "/usr/lib64" do
   to "/usr/lib"
 end
