@@ -1,0 +1,985 @@
+I, [2014-10-07T13:14:39.794834 #66788]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T13:14:39.795013 #66788]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T13:14:39.797664 #66788]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-07T13:14:39.797971 #66788]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T13:14:39.798146 #66788]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-07T13:14:40.420037 #66788]  INFO -- default-ubuntu-1204: Vagrant appears to be running in a Bundler environment. Your 
+I, [2014-10-07T13:14:40.420114 #66788]  INFO -- default-ubuntu-1204: existing Gemfile will be used. Vagrant will not auto-load any plugins
+I, [2014-10-07T13:14:40.420149 #66788]  INFO -- default-ubuntu-1204: installed with `vagrant plugin`. Vagrant will autoload any plugins in
+I, [2014-10-07T13:14:40.420178 #66788]  INFO -- default-ubuntu-1204: the 'plugins' group in your Gemfile. You can force Vagrant to take over
+I, [2014-10-07T13:14:40.420204 #66788]  INFO -- default-ubuntu-1204: with VAGRANT_FORCE_BUNDLER.
+E, [2014-10-07T13:14:40.433500 #66788] ERROR -- default-ubuntu-1204: Create failed on instance <default-ubuntu-1204>.
+E, [2014-10-07T13:14:40.433658 #66788] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-10-07T13:14:40.433711 #66788] ERROR -- default-ubuntu-1204: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T13:14:40.433751 #66788] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T13:14:40.433791 #66788] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-10-07T13:14:40.433821 #66788] ERROR -- default-ubuntu-1204: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2014-10-07T13:14:40.433853 #66788] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T13:14:40.433911 #66788] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-10-07T13:14:40.433944 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T13:14:40.433979 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T13:14:40.434010 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T13:14:40.434052 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T13:14:40.434088 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T13:14:40.434120 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T13:14:40.434148 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T13:14:40.434184 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T13:14:40.434218 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T13:14:40.434252 #66788] ERROR -- default-ubuntu-1204: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T13:14:40.434286 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T13:14:40.434324 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T13:14:40.434357 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:14:40.434392 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T13:14:40.434421 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T13:14:40.434455 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T13:14:40.434522 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T13:14:40.434544 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T13:14:40.434574 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T13:14:40.434595 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T13:14:40.434615 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T13:14:40.434645 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:14:40.434672 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T13:14:40.434699 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T13:14:40.434719 #66788] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T13:14:40.434737 #66788] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-10-07T13:14:53.063324 #66847]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T13:14:53.063646 #66847]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T13:14:53.065759 #66847]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-07T13:14:53.073787 #66847]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T13:14:53.073952 #66847]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-07T13:14:53.668784 #66847]  INFO -- default-ubuntu-1204: Vagrant appears to be running in a Bundler environment. Your 
+I, [2014-10-07T13:14:53.668863 #66847]  INFO -- default-ubuntu-1204: existing Gemfile will be used. Vagrant will not auto-load any plugins
+I, [2014-10-07T13:14:53.668896 #66847]  INFO -- default-ubuntu-1204: installed with `vagrant plugin`. Vagrant will autoload any plugins in
+I, [2014-10-07T13:14:53.668922 #66847]  INFO -- default-ubuntu-1204: the 'plugins' group in your Gemfile. You can force Vagrant to take over
+I, [2014-10-07T13:14:53.668948 #66847]  INFO -- default-ubuntu-1204: with VAGRANT_FORCE_BUNDLER.
+E, [2014-10-07T13:14:53.682757 #66847] ERROR -- default-ubuntu-1204: Create failed on instance <default-ubuntu-1204>.
+E, [2014-10-07T13:14:53.682915 #66847] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-10-07T13:14:53.682966 #66847] ERROR -- default-ubuntu-1204: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T13:14:53.683004 #66847] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T13:14:53.683067 #66847] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-10-07T13:14:53.683112 #66847] ERROR -- default-ubuntu-1204: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2014-10-07T13:14:53.683146 #66847] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T13:14:53.683188 #66847] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-10-07T13:14:53.683224 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T13:14:53.683261 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T13:14:53.683299 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T13:14:53.683332 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T13:14:53.683365 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T13:14:53.683393 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T13:14:53.683425 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T13:14:53.683454 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T13:14:53.683485 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T13:14:53.683525 #66847] ERROR -- default-ubuntu-1204: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T13:14:53.683561 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T13:14:53.683595 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T13:14:53.683631 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:14:53.683664 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T13:14:53.683698 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T13:14:53.683729 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T13:14:53.683760 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T13:14:53.683791 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T13:14:53.683824 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T13:14:53.683857 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T13:14:53.683893 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T13:14:53.683927 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:14:53.683961 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T13:14:53.683986 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T13:14:53.684016 #66847] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T13:14:53.684047 #66847] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-10-07T13:15:46.781798 #66932]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T13:15:46.782136 #66932]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T13:15:46.784291 #66932]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-07T13:15:46.792238 #66932]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T13:15:46.792447 #66932]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-07T13:15:47.384798 #66932]  INFO -- default-ubuntu-1204: Vagrant appears to be running in a Bundler environment. Your 
+I, [2014-10-07T13:15:47.384888 #66932]  INFO -- default-ubuntu-1204: existing Gemfile will be used. Vagrant will not auto-load any plugins
+I, [2014-10-07T13:15:47.384926 #66932]  INFO -- default-ubuntu-1204: installed with `vagrant plugin`. Vagrant will autoload any plugins in
+I, [2014-10-07T13:15:47.385134 #66932]  INFO -- default-ubuntu-1204: the 'plugins' group in your Gemfile. You can force Vagrant to take over
+I, [2014-10-07T13:15:47.385169 #66932]  INFO -- default-ubuntu-1204: with VAGRANT_FORCE_BUNDLER.
+E, [2014-10-07T13:15:47.398900 #66932] ERROR -- default-ubuntu-1204: Create failed on instance <default-ubuntu-1204>.
+E, [2014-10-07T13:15:47.399049 #66932] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-10-07T13:15:47.399096 #66932] ERROR -- default-ubuntu-1204: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T13:15:47.399126 #66932] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T13:15:47.399177 #66932] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-10-07T13:15:47.399215 #66932] ERROR -- default-ubuntu-1204: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2014-10-07T13:15:47.399242 #66932] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T13:15:47.399277 #66932] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-10-07T13:15:47.399310 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T13:15:47.399369 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T13:15:47.399409 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T13:15:47.399441 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T13:15:47.399485 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T13:15:47.399515 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T13:15:47.399548 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T13:15:47.399579 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T13:15:47.399611 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T13:15:47.399643 #66932] ERROR -- default-ubuntu-1204: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T13:15:47.399676 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T13:15:47.399709 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T13:15:47.399744 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:15:47.399779 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T13:15:47.399813 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T13:15:47.399842 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T13:15:47.399873 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T13:15:47.399906 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T13:15:47.399943 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T13:15:47.399974 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T13:15:47.400008 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T13:15:47.400044 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:15:47.400074 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T13:15:47.400108 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T13:15:47.400143 #66932] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T13:15:47.400180 #66932] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-10-07T15:00:15.535080 #82046]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T15:00:15.537543 #82046]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:00:15.541903 #82046]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-07T15:00:15.542203 #82046]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T15:00:15.542342 #82046]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-07T15:00:16.143943 #82046]  INFO -- default-ubuntu-1204: Vagrant appears to be running in a Bundler environment. Your 
+I, [2014-10-07T15:00:16.144049 #82046]  INFO -- default-ubuntu-1204: existing Gemfile will be used. Vagrant will not auto-load any plugins
+I, [2014-10-07T15:00:16.144096 #82046]  INFO -- default-ubuntu-1204: installed with `vagrant plugin`. Vagrant will autoload any plugins in
+I, [2014-10-07T15:00:16.144134 #82046]  INFO -- default-ubuntu-1204: the 'plugins' group in your Gemfile. You can force Vagrant to take over
+I, [2014-10-07T15:00:16.144169 #82046]  INFO -- default-ubuntu-1204: with VAGRANT_FORCE_BUNDLER.
+E, [2014-10-07T15:00:16.157471 #82046] ERROR -- default-ubuntu-1204: Create failed on instance <default-ubuntu-1204>.
+E, [2014-10-07T15:00:16.157614 #82046] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-10-07T15:00:16.157659 #82046] ERROR -- default-ubuntu-1204: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:00:16.157688 #82046] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:00:16.157725 #82046] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-10-07T15:00:16.157756 #82046] ERROR -- default-ubuntu-1204: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:00:16.157809 #82046] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:00:16.157853 #82046] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-10-07T15:00:16.157883 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T15:00:16.157909 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T15:00:16.157942 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T15:00:16.157971 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T15:00:16.158000 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T15:00:16.158029 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T15:00:16.158058 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T15:00:16.158086 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T15:00:16.158112 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T15:00:16.158142 #82046] ERROR -- default-ubuntu-1204: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T15:00:16.158169 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T15:00:16.158198 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T15:00:16.158234 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:00:16.158266 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T15:00:16.158292 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T15:00:16.158319 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T15:00:16.158344 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T15:00:16.158371 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T15:00:16.158400 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T15:00:16.158432 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T15:00:16.158457 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T15:00:16.158485 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:00:16.158509 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T15:00:16.158537 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T15:00:16.158562 #82046] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T15:00:16.158587 #82046] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-10-07T15:01:19.273532 #82133]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T15:01:19.273832 #82133]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:01:19.276170 #82133]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-07T15:01:19.284531 #82133]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T15:01:19.284764 #82133]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-07T15:01:19.841553 #82133]  INFO -- default-ubuntu-1204: Vagrant appears to be running in a Bundler environment. Your 
+I, [2014-10-07T15:01:19.841646 #82133]  INFO -- default-ubuntu-1204: existing Gemfile will be used. Vagrant will not auto-load any plugins
+I, [2014-10-07T15:01:19.841685 #82133]  INFO -- default-ubuntu-1204: installed with `vagrant plugin`. Vagrant will autoload any plugins in
+I, [2014-10-07T15:01:19.841718 #82133]  INFO -- default-ubuntu-1204: the 'plugins' group in your Gemfile. You can force Vagrant to take over
+I, [2014-10-07T15:01:19.841748 #82133]  INFO -- default-ubuntu-1204: with VAGRANT_FORCE_BUNDLER.
+E, [2014-10-07T15:01:19.856318 #82133] ERROR -- default-ubuntu-1204: Create failed on instance <default-ubuntu-1204>.
+E, [2014-10-07T15:01:19.856426 #82133] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-10-07T15:01:19.856456 #82133] ERROR -- default-ubuntu-1204: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:01:19.856476 #82133] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:01:19.856518 #82133] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-10-07T15:01:19.856542 #82133] ERROR -- default-ubuntu-1204: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:01:19.856568 #82133] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:01:19.856590 #82133] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-10-07T15:01:19.856609 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T15:01:19.856626 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T15:01:19.856653 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T15:01:19.856673 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T15:01:19.856692 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T15:01:19.856711 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T15:01:19.856729 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T15:01:19.856747 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T15:01:19.856764 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T15:01:19.856783 #82133] ERROR -- default-ubuntu-1204: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T15:01:19.856803 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T15:01:19.856822 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T15:01:19.856838 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:01:19.856856 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T15:01:19.856872 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T15:01:19.856888 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T15:01:19.856906 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T15:01:19.856924 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T15:01:19.856945 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T15:01:19.856964 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T15:01:19.856982 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T15:01:19.856998 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:01:19.857014 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T15:01:19.857033 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T15:01:19.857054 #82133] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T15:01:19.857072 #82133] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-10-07T15:03:32.042286 #82321]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T15:03:32.042552 #82321]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:03:32.044621 #82321]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-07T15:03:32.052484 #82321]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T15:03:32.052643 #82321]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-07T15:03:32.644023 #82321]  INFO -- default-ubuntu-1204: Vagrant appears to be running in a Bundler environment. Your 
+I, [2014-10-07T15:03:32.644099 #82321]  INFO -- default-ubuntu-1204: existing Gemfile will be used. Vagrant will not auto-load any plugins
+I, [2014-10-07T15:03:32.644122 #82321]  INFO -- default-ubuntu-1204: installed with `vagrant plugin`. Vagrant will autoload any plugins in
+I, [2014-10-07T15:03:32.644143 #82321]  INFO -- default-ubuntu-1204: the 'plugins' group in your Gemfile. You can force Vagrant to take over
+I, [2014-10-07T15:03:32.644162 #82321]  INFO -- default-ubuntu-1204: with VAGRANT_FORCE_BUNDLER.
+E, [2014-10-07T15:03:32.657028 #82321] ERROR -- default-ubuntu-1204: Create failed on instance <default-ubuntu-1204>.
+E, [2014-10-07T15:03:32.657176 #82321] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-10-07T15:03:32.657223 #82321] ERROR -- default-ubuntu-1204: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:03:32.657251 #82321] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:03:32.657286 #82321] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-10-07T15:03:32.657321 #82321] ERROR -- default-ubuntu-1204: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:03:32.657351 #82321] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:03:32.657416 #82321] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-10-07T15:03:32.657449 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T15:03:32.657481 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T15:03:32.657512 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T15:03:32.657544 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T15:03:32.657574 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T15:03:32.657604 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T15:03:32.657631 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T15:03:32.657662 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T15:03:32.657693 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T15:03:32.657722 #82321] ERROR -- default-ubuntu-1204: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T15:03:32.657753 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T15:03:32.657778 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T15:03:32.657807 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:03:32.657832 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T15:03:32.657871 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T15:03:32.657904 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T15:03:32.657930 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T15:03:32.657961 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T15:03:32.657992 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T15:03:32.658019 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T15:03:32.658048 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T15:03:32.658076 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:03:32.658103 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T15:03:32.658130 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T15:03:32.658155 #82321] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T15:03:32.658190 #82321] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-10-07T15:04:55.917211 #82417]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T15:04:55.917516 #82417]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:04:55.919655 #82417]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-07T15:04:55.919911 #82417]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T15:04:55.920050 #82417]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-07T15:04:56.525728 #82417]  INFO -- default-ubuntu-1204: Vagrant appears to be running in a Bundler environment. Your 
+I, [2014-10-07T15:04:56.525815 #82417]  INFO -- default-ubuntu-1204: existing Gemfile will be used. Vagrant will not auto-load any plugins
+I, [2014-10-07T15:04:56.525844 #82417]  INFO -- default-ubuntu-1204: installed with `vagrant plugin`. Vagrant will autoload any plugins in
+I, [2014-10-07T15:04:56.525870 #82417]  INFO -- default-ubuntu-1204: the 'plugins' group in your Gemfile. You can force Vagrant to take over
+I, [2014-10-07T15:04:56.525896 #82417]  INFO -- default-ubuntu-1204: with VAGRANT_FORCE_BUNDLER.
+E, [2014-10-07T15:04:56.539468 #82417] ERROR -- default-ubuntu-1204: Create failed on instance <default-ubuntu-1204>.
+E, [2014-10-07T15:04:56.539567 #82417] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-10-07T15:04:56.539597 #82417] ERROR -- default-ubuntu-1204: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:04:56.539618 #82417] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:04:56.539661 #82417] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-10-07T15:04:56.539684 #82417] ERROR -- default-ubuntu-1204: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:04:56.539701 #82417] ERROR -- default-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:04:56.539725 #82417] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-10-07T15:04:56.539744 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T15:04:56.539765 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T15:04:56.539783 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T15:04:56.539806 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T15:04:56.539828 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T15:04:56.539847 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T15:04:56.539864 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T15:04:56.539881 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T15:04:56.539899 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T15:04:56.539917 #82417] ERROR -- default-ubuntu-1204: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T15:04:56.539935 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T15:04:56.539954 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T15:04:56.539971 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:04:56.539989 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T15:04:56.540005 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T15:04:56.540020 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T15:04:56.540039 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T15:04:56.540057 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T15:04:56.540075 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T15:04:56.540095 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T15:04:56.540113 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T15:04:56.540129 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:04:56.540149 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T15:04:56.540165 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T15:04:56.540181 #82417] ERROR -- default-ubuntu-1204: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T15:04:56.540204 #82417] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-10-07T15:39:53.187614 #27193]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T15:39:53.190674 #27193]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:39:53.192748 #27193]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-07T15:39:53.193030 #27193]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T15:39:53.193158 #27193]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-07T15:39:54.580031 #27193]  INFO -- default-ubuntu-1204: You appear to be running Vagrant outside of the official installers.
+I, [2014-10-07T15:39:54.580126 #27193]  INFO -- default-ubuntu-1204: Note that the installers are what ensure that Vagrant has all required
+I, [2014-10-07T15:39:54.580160 #27193]  INFO -- default-ubuntu-1204: dependencies, and Vagrant assumes that these dependencies exist. By
+I, [2014-10-07T15:39:54.580196 #27193]  INFO -- default-ubuntu-1204: running outside of the installer environment, Vagrant may not function
+I, [2014-10-07T15:39:54.580225 #27193]  INFO -- default-ubuntu-1204: properly. To remove this warning, install Vagrant using one of the
+I, [2014-10-07T15:39:54.580254 #27193]  INFO -- default-ubuntu-1204: official packages from vagrantup.com.
+I, [2014-10-07T15:39:54.825942 #27193]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-10-07T15:39:55.182410 #27193]  INFO -- default-ubuntu-1204: ==> default: Importing base box 'opscode-ubuntu-12.04'...
+I, [2014-10-07T15:40:06.257040 #27193]  INFO -- default-ubuntu-1204: [KProgress: 10%[KProgress: 20%[KProgress: 40%[KProgress: 50%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2014-10-07T15:40:06.722405 #27193]  INFO -- default-ubuntu-1204: ==> default: Setting the name of the VM: default-ubuntu-1204_default_1412714406695_97901
+I, [2014-10-07T15:40:07.051872 #27193]  INFO -- default-ubuntu-1204: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2014-10-07T15:40:07.085835 #27193]  INFO -- default-ubuntu-1204: ==> default: Clearing any previously set network interfaces...
+I, [2014-10-07T15:40:07.123855 #27193]  INFO -- default-ubuntu-1204: ==> default: Preparing network interfaces based on configuration...
+I, [2014-10-07T15:40:07.124119 #27193]  INFO -- default-ubuntu-1204:     default: Adapter 1: nat
+I, [2014-10-07T15:40:07.176815 #27193]  INFO -- default-ubuntu-1204: ==> default: Forwarding ports...
+I, [2014-10-07T15:40:07.298432 #27193]  INFO -- default-ubuntu-1204:     default: 22 => 2200 (adapter 1)
+I, [2014-10-07T15:40:07.443864 #27193]  INFO -- default-ubuntu-1204: ==> default: Booting VM...
+I, [2014-10-07T15:40:07.873211 #27193]  INFO -- default-ubuntu-1204: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-10-07T15:40:08.298020 #27193]  INFO -- default-ubuntu-1204:     default: SSH address: 127.0.0.1:2200
+I, [2014-10-07T15:40:08.298292 #27193]  INFO -- default-ubuntu-1204:     default: SSH username: vagrant
+I, [2014-10-07T15:40:08.298477 #27193]  INFO -- default-ubuntu-1204:     default: SSH auth method: private key
+I, [2014-10-07T15:40:23.434866 #27193]  INFO -- default-ubuntu-1204:     default: Warning: Connection timeout. Retrying...
+I, [2014-10-07T15:40:23.904187 #27193]  INFO -- default-ubuntu-1204: ==> default: Machine booted and ready!
+I, [2014-10-07T15:40:23.904601 #27193]  INFO -- default-ubuntu-1204: ==> default: Checking for guest additions in VM...
+I, [2014-10-07T15:40:23.934536 #27193]  INFO -- default-ubuntu-1204: ==> default: Setting hostname...
+I, [2014-10-07T15:40:26.509924 #27193]  INFO -- default-ubuntu-1204: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-10-07T15:40:28.789716 #27193]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-10-07T15:40:28.791591 #27193]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m35.60s).
+I, [2014-10-07T15:40:28.791735 #27193]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-10-07T15:40:28.803752 #27193]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-10-07T15:40:28.803894 #27193]  INFO -- default-ubuntu-1204: Preparing dna.json
+I, [2014-10-07T15:40:28.804439 #27193]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf 3.1.5...
+I, [2014-10-07T15:40:34.904401 #27193]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-10-07T15:40:34.909884 #27193]  INFO -- default-ubuntu-1204: Preparing solo.rb
+I, [2014-10-07T15:40:34.972154 #27193]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (install only if missing)
+I, [2014-10-07T15:40:34.972238 #27193]  INFO -- default-ubuntu-1204: downloading https://www.getchef.com/chef/install.sh
+I, [2014-10-07T15:40:34.972279 #27193]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-10-07T15:40:34.972307 #27193]  INFO -- default-ubuntu-1204: trying wget...
+I, [2014-10-07T15:40:35.366449 #27193]  INFO -- default-ubuntu-1204: Downloading Chef  for ubuntu...
+I, [2014-10-07T15:40:35.367860 #27193]  INFO -- default-ubuntu-1204: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=12.04&m=x86_64
+I, [2014-10-07T15:40:35.368150 #27193]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh.1177/metadata.txt
+I, [2014-10-07T15:40:35.368354 #27193]  INFO -- default-ubuntu-1204: trying wget...
+I, [2014-10-07T15:40:35.553812 #27193]  INFO -- default-ubuntu-1204: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.16.2-1_amd64.deb
+I, [2014-10-07T15:40:35.554552 #27193]  INFO -- default-ubuntu-1204: md5	a2b20f34bc7d7dc0a6e0636caa314c03
+I, [2014-10-07T15:40:35.555237 #27193]  INFO -- default-ubuntu-1204: sha256	dd3360ea2fd238f3bec962bdb3bb179060701bc67ac5cad3eed4be1b1c1afe8f
+I, [2014-10-07T15:40:35.558677 #27193]  INFO -- default-ubuntu-1204: downloaded metadata file looks valid...
+I, [2014-10-07T15:40:35.565404 #27193]  INFO -- default-ubuntu-1204: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.16.2-1_amd64.deb
+I, [2014-10-07T15:40:35.565902 #27193]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh.1177/chef_11.16.2-1_amd64.deb
+I, [2014-10-07T15:40:35.566347 #27193]  INFO -- default-ubuntu-1204: trying wget...
+I, [2014-10-07T15:41:12.469615 #27193]  INFO -- default-ubuntu-1204: Comparing checksum with sha256sum...
+I, [2014-10-07T15:41:12.702213 #27193]  INFO -- default-ubuntu-1204: Installing Chef 
+I, [2014-10-07T15:41:12.702530 #27193]  INFO -- default-ubuntu-1204: installing with dpkg...
+I, [2014-10-07T15:41:12.758202 #27193]  INFO -- default-ubuntu-1204: Selecting previously unselected package chef.
+I, [2014-10-07T15:41:12.912505 #27193]  INFO -- default-ubuntu-1204: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56035 files and directories currently installed.)
+I, [2014-10-07T15:41:12.916100 #27193]  INFO -- default-ubuntu-1204: Unpacking chef (from .../chef_11.16.2-1_amd64.deb) ...
+I, [2014-10-07T15:41:17.644732 #27193]  INFO -- default-ubuntu-1204: Setting up chef (11.16.2-1) ...
+I, [2014-10-07T15:41:17.708759 #27193]  INFO -- default-ubuntu-1204: Thank you for installing Chef!
+I, [2014-10-07T15:41:17.747846 #27193]  INFO -- default-ubuntu-1204: Transferring files to <default-ubuntu-1204>
+I, [2014-10-07T15:41:19.051718 #27193]  INFO -- default-ubuntu-1204: [2014-10-07T20:41:17+00:00] WARN: 
+I, [2014-10-07T15:41:19.052046 #27193]  INFO -- default-ubuntu-1204: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-10-07T15:41:19.052345 #27193]  INFO -- default-ubuntu-1204: SSL validation of HTTPS requests is disabled. HTTPS connections are still
+I, [2014-10-07T15:41:19.052609 #27193]  INFO -- default-ubuntu-1204: encrypted, but chef is not able to detect forged replies or man in the middle
+I, [2014-10-07T15:41:19.052846 #27193]  INFO -- default-ubuntu-1204: attacks.
+I, [2014-10-07T15:41:19.053023 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:41:19.053221 #27193]  INFO -- default-ubuntu-1204: To fix this issue add an entry like this to your configuration file:
+I, [2014-10-07T15:41:19.053438 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:41:19.053691 #27193]  INFO -- default-ubuntu-1204: ```
+I, [2014-10-07T15:41:19.054053 #27193]  INFO -- default-ubuntu-1204:   # Verify all HTTPS connections (recommended)
+I, [2014-10-07T15:41:19.054396 #27193]  INFO -- default-ubuntu-1204:   ssl_verify_mode :verify_peer
+I, [2014-10-07T15:41:19.054572 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:41:19.054832 #27193]  INFO -- default-ubuntu-1204:   # OR, Verify only connections to chef-server
+I, [2014-10-07T15:41:19.055133 #27193]  INFO -- default-ubuntu-1204:   verify_api_cert true
+I, [2014-10-07T15:41:19.055456 #27193]  INFO -- default-ubuntu-1204: ```
+I, [2014-10-07T15:41:19.055991 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:41:19.056028 #27193]  INFO -- default-ubuntu-1204: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-10-07T15:41:19.056046 #27193]  INFO -- default-ubuntu-1204: `knife ssl check` command like so:
+I, [2014-10-07T15:41:19.056060 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:41:19.056073 #27193]  INFO -- default-ubuntu-1204: ```
+I, [2014-10-07T15:41:19.056086 #27193]  INFO -- default-ubuntu-1204:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-10-07T15:41:19.056098 #27193]  INFO -- default-ubuntu-1204: ```
+I, [2014-10-07T15:41:19.056110 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:41:19.056154 #27193]  INFO -- default-ubuntu-1204: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-10-07T15:41:19.056167 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:41:19.056570 #27193]  INFO -- default-ubuntu-1204: Starting Chef Client, version 11.16.2
+I, [2014-10-07T15:41:21.072818 #27193]  INFO -- default-ubuntu-1204: Compiling Cookbooks...
+I, [2014-10-07T15:41:21.082872 #27193]  INFO -- default-ubuntu-1204: Recipe: minitest-handler::default
+I, [2014-10-07T15:41:21.083689 #27193]  INFO -- default-ubuntu-1204:   * chef_gem[ci_reporter] action nothing (skipped due to action :nothing)
+I, [2014-10-07T15:41:28.565311 #27193]  INFO -- default-ubuntu-1204:   * chef_gem[ci_reporter] action install
+I, [2014-10-07T15:41:28.565371 #27193]  INFO -- default-ubuntu-1204:     - install version 1.9.2 of package ci_reporter
+I, [2014-10-07T15:41:28.565394 #27193]  INFO -- default-ubuntu-1204:   * chef_gem[minitest] action nothing (skipped due to action :nothing)
+I, [2014-10-07T15:41:28.565411 #27193]  INFO -- default-ubuntu-1204:   * chef_gem[minitest] action install (skipped due to only_if)
+I, [2014-10-07T15:41:28.565427 #27193]  INFO -- default-ubuntu-1204:   * chef_gem[minitest-chef-handler] action nothing (skipped due to action :nothing)
+I, [2014-10-07T15:42:35.879035 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:42:35.879095 #27193]  INFO -- default-ubuntu-1204:     - install version 1.0.3 of package minitest-chef-handler
+I, [2014-10-07T15:42:36.037992 #27193]  INFO -- default-ubuntu-1204:   Converging 14 resources
+I, [2014-10-07T15:42:36.039326 #27193]  INFO -- default-ubuntu-1204:   * chef_gem[ci_reporter] action nothing (skipped due to action :nothing)
+I, [2014-10-07T15:42:36.040107 #27193]  INFO -- default-ubuntu-1204:   * chef_gem[minitest] action nothing (skipped due to action :nothing)
+I, [2014-10-07T15:42:36.040865 #27193]  INFO -- default-ubuntu-1204:   * chef_gem[minitest-chef-handler] action nothing (skipped due to action :nothing)
+I, [2014-10-07T15:42:36.042102 #27193]  INFO -- default-ubuntu-1204:   * directory[delete minitest test location] action delete (up to date)
+I, [2014-10-07T15:42:36.043522 #27193]  INFO -- default-ubuntu-1204:   * directory[create minitest test location] action create
+I, [2014-10-07T15:42:36.044845 #27193]  INFO -- default-ubuntu-1204:     - create new directory /var/chef/minitest
+I, [2014-10-07T15:42:36.045541 #27193]  INFO -- default-ubuntu-1204:     - change mode from '' to '0775'
+I, [2014-10-07T15:42:36.048168 #27193]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'
+I, [2014-10-07T15:42:36.049314 #27193]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'
+I, [2014-10-07T15:42:36.051774 #27193]  INFO -- default-ubuntu-1204:   * ruby_block[load_tests_and_register_handler] action run
+I, [2014-10-07T15:42:36.052287 #27193]  INFO -- default-ubuntu-1204:   Recipe: <Dynamically Defined Resource>
+I, [2014-10-07T15:42:36.053107 #27193]  INFO -- default-ubuntu-1204:     * directory[/var/chef/minitest/minitest-handler] action create
+I, [2014-10-07T15:42:36.054054 #27193]  INFO -- default-ubuntu-1204:       - create new directory /var/chef/minitest/minitest-handler
+I, [2014-10-07T15:42:36.058496 #27193]  INFO -- default-ubuntu-1204:     * directory[/var/chef/minitest/netvault_test] action create
+I, [2014-10-07T15:42:36.059652 #27193]  INFO -- default-ubuntu-1204:       - create new directory /var/chef/minitest/netvault_test
+I, [2014-10-07T15:42:36.062184 #27193]  INFO -- default-ubuntu-1204:     * directory[/var/chef/minitest/netvault_test] action create (up to date)
+I, [2014-10-07T15:42:36.064492 #27193]  INFO -- default-ubuntu-1204:     * cookbook_file[/var/chef/minitest/netvault_test/default_test.rb] action create
+I, [2014-10-07T15:42:36.068088 #27193]  INFO -- default-ubuntu-1204:       - create new file /var/chef/minitest/netvault_test/default_test.rb
+I, [2014-10-07T15:42:36.068658 #27193]  INFO -- default-ubuntu-1204:       - update content in file /var/chef/minitest/netvault_test/default_test.rb from none to 54ffe4
+I, [2014-10-07T15:42:36.070028 #27193]  INFO -- default-ubuntu-1204:       --- /var/chef/minitest/netvault_test/default_test.rb	2014-10-07 20:42:34.147659861 +0000
+I, [2014-10-07T15:42:36.070854 #27193]  INFO -- default-ubuntu-1204:       +++ /tmp/.default_test.rb20141007-1261-fm2d28	2014-10-07 20:42:34.147659861 +0000
+I, [2014-10-07T15:42:36.071526 #27193]  INFO -- default-ubuntu-1204:       @@ -1 +1,31 @@
+I, [2014-10-07T15:42:36.072282 #27193]  INFO -- default-ubuntu-1204:       +require 'minitest/spec'
+I, [2014-10-07T15:42:36.072715 #27193]  INFO -- default-ubuntu-1204:       +
+I, [2014-10-07T15:42:36.073198 #27193]  INFO -- default-ubuntu-1204:       +class NetvaultSpec < MiniTest::Chef::Spec
+I, [2014-10-07T15:42:36.074518 #27193]  INFO -- default-ubuntu-1204:       +  describe "netvault" do
+I, [2014-10-07T15:42:36.075207 #27193]  INFO -- default-ubuntu-1204:       +    include MiniTest::Chef::Resources
+I, [2014-10-07T15:42:36.076151 #27193]  INFO -- default-ubuntu-1204:       +    include MiniTest::Chef::Assertions
+I, [2014-10-07T15:42:36.076563 #27193]  INFO -- default-ubuntu-1204:       +
+I, [2014-10-07T15:42:36.076896 #27193]  INFO -- default-ubuntu-1204:       +    describe_recipe "netvault_test::default" do
+I, [2014-10-07T15:42:36.077297 #27193]  INFO -- default-ubuntu-1204:       +      it "should have the development libraries for libaio1 installed" do
+I, [2014-10-07T15:42:36.077894 #27193]  INFO -- default-ubuntu-1204:       +        package('libaio1').must_be_installed
+I, [2014-10-07T15:42:36.078336 #27193]  INFO -- default-ubuntu-1204:       +      end
+I, [2014-10-07T15:42:36.078652 #27193]  INFO -- default-ubuntu-1204:       +      it "should have the development libraries for libstdc++5 installed" do
+I, [2014-10-07T15:42:36.079039 #27193]  INFO -- default-ubuntu-1204:       +        package('libstdc++5').must_be_installed
+I, [2014-10-07T15:42:36.079376 #27193]  INFO -- default-ubuntu-1204:       +      end
+I, [2014-10-07T15:42:36.079700 #27193]  INFO -- default-ubuntu-1204:       +
+I, [2014-10-07T15:42:36.080362 #27193]  INFO -- default-ubuntu-1204:       +      it "should have a directory called /tmp/netvault" do
+I, [2014-10-07T15:42:36.081868 #27193]  INFO -- default-ubuntu-1204:       +        directory("#{Chef::Config['file_cache_path']}/netvault").must_exist
+I, [2014-10-07T15:42:36.083149 #27193]  INFO -- default-ubuntu-1204:       +      end
+I, [2014-10-07T15:42:36.083270 #27193]  INFO -- default-ubuntu-1204:       +
+I, [2014-10-07T15:42:36.084252 #27193]  INFO -- default-ubuntu-1204:       +      describe "should have a responsefile which contains" do
+I, [2014-10-07T15:42:36.084320 #27193]  INFO -- default-ubuntu-1204:       +        let(:config) { file("#{Chef::Config['file_cache_path']}/netvault/responsefile") }
+I, [2014-10-07T15:42:36.084351 #27193]  INFO -- default-ubuntu-1204:       +
+I, [2014-10-07T15:42:36.084368 #27193]  INFO -- default-ubuntu-1204:       +        it { config.must_exist }
+I, [2014-10-07T15:42:36.084383 #27193]  INFO -- default-ubuntu-1204:       +        it { config.must_include 'PKG_BASE="/usr/local/netvault"' }
+I, [2014-10-07T15:42:36.084397 #27193]  INFO -- default-ubuntu-1204:       +        it { config.must_include 'PASSWORD="PMDSupPorT123"' }
+I, [2014-10-07T15:42:36.084411 #27193]  INFO -- default-ubuntu-1204:       +        it { config.must_include 'LOGICAL_NAME="default-ubuntu-1204"' }
+I, [2014-10-07T15:42:36.084425 #27193]  INFO -- default-ubuntu-1204:       +      end
+I, [2014-10-07T15:42:36.084438 #27193]  INFO -- default-ubuntu-1204:       +    end
+I, [2014-10-07T15:42:36.084479 #27193]  INFO -- default-ubuntu-1204:       +  end
+I, [2014-10-07T15:42:36.085477 #27193]  INFO -- default-ubuntu-1204: +end
+I, [2014-10-07T15:42:36.086993 #27193]  INFO -- default-ubuntu-1204:     * directory[/var/chef/minitest/netvault] action create
+I, [2014-10-07T15:42:36.088273 #27193]  INFO -- default-ubuntu-1204:       - create new directory /var/chef/minitest/netvault
+I, [2014-10-07T15:42:36.090494 #27193]  INFO -- default-ubuntu-1204:     - execute the ruby block load_tests_and_register_handler
+I, [2014-10-07T15:42:36.091213 #27193]  INFO -- default-ubuntu-1204: Recipe: netvault::default
+I, [2014-10-07T15:42:41.674111 #27193]  INFO -- default-ubuntu-1204:   * package[libaio1] action install
+I, [2014-10-07T15:42:41.674188 #27193]  INFO -- default-ubuntu-1204:     - install version 0.3.109-2ubuntu1 of package libaio1
+I, [2014-10-07T15:42:43.571275 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:42:43.571351 #27193]  INFO -- default-ubuntu-1204:     - install version 1:3.3.6-25ubuntu1 of package libstdc++5
+I, [2014-10-07T15:42:43.571376 #27193]  INFO -- default-ubuntu-1204:   * directory[/var/lock/subsys] action create
+I, [2014-10-07T15:42:43.571786 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:42:43.572354 #27193]  INFO -- default-ubuntu-1204:     - change mode from '' to '0755'
+I, [2014-10-07T15:42:43.572762 #27193]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'
+I, [2014-10-07T15:42:43.573766 #27193]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'
+I, [2014-10-07T15:42:43.575134 #27193]  INFO -- default-ubuntu-1204:   * link[/usr/lib64] action create
+I, [2014-10-07T15:42:43.575928 #27193]  INFO -- default-ubuntu-1204:     - create symlink at /usr/lib64 to /usr/lib
+I, [2014-10-07T15:42:43.577453 #27193]  INFO -- default-ubuntu-1204:   * remote_file[/tmp/kitchen/cache/netvault-R2014APR29-SECRETARIAT-V10-Linux-Pure64-ClientOnly.tar.gz] action create
+I, [2014-10-07T15:43:23.177033 #27193]  INFO -- default-ubuntu-1204:     - create new file /tmp/kitchen/cache/netvault-R2014APR29-SECRETARIAT-V10-Linux-Pure64-ClientOnly.tar.gz
+I, [2014-10-07T15:43:23.177468 #27193]  INFO -- default-ubuntu-1204:     - update content in file /tmp/kitchen/cache/netvault-R2014APR29-SECRETARIAT-V10-Linux-Pure64-ClientOnly.tar.gz from none to a587ba
+I, [2014-10-07T15:43:23.178646 #27193]  INFO -- default-ubuntu-1204:     (file sizes exceed 10000000 bytes, diff output suppressed)
+I, [2014-10-07T15:43:23.179055 #27193]  INFO -- default-ubuntu-1204:     - change mode from '' to '0644'
+I, [2014-10-07T15:43:23.179586 #27193]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'
+I, [2014-10-07T15:43:23.180607 #27193]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'
+I, [2014-10-07T15:43:24.038801 #27193]  INFO -- default-ubuntu-1204:   * bash[extract_module] action run
+I, [2014-10-07T15:43:24.039715 #27193]  INFO -- default-ubuntu-1204:     - execute "bash"  "/tmp/chef-script20141007-1261-yw1ujn"
+I, [2014-10-07T15:43:24.041662 #27193]  INFO -- default-ubuntu-1204:   * template[/tmp/kitchen/cache/netvault/responsefile] action create
+I, [2014-10-07T15:43:24.044288 #27193]  INFO -- default-ubuntu-1204:     - create new file /tmp/kitchen/cache/netvault/responsefile
+I, [2014-10-07T15:43:24.044642 #27193]  INFO -- default-ubuntu-1204:     - update content in file /tmp/kitchen/cache/netvault/responsefile from none to ee3e8e
+I, [2014-10-07T15:43:24.045373 #27193]  INFO -- default-ubuntu-1204:     --- /tmp/kitchen/cache/netvault/responsefile	2014-10-07 20:43:22.143644790 +0000
+I, [2014-10-07T15:43:24.046358 #27193]  INFO -- default-ubuntu-1204:     +++ /tmp/chef-rendered-template20141007-1261-1hm93om	2014-10-07 20:43:22.143644790 +0000
+I, [2014-10-07T15:43:24.046954 #27193]  INFO -- default-ubuntu-1204:     @@ -1 +1,5 @@
+I, [2014-10-07T15:43:24.047585 #27193]  INFO -- default-ubuntu-1204:     +PKG_BASE="/usr/local/netvault"
+I, [2014-10-07T15:43:24.048151 #27193]  INFO -- default-ubuntu-1204:     +PASSWORD="PMDSupPorT123"
+I, [2014-10-07T15:43:24.048675 #27193]  INFO -- default-ubuntu-1204:     +LOGICAL_NAME="default-ubuntu-1204"
+I, [2014-10-07T15:43:24.049696 #27193]  INFO -- default-ubuntu-1204:     +NVLANGUAGE="English"
+I, [2014-10-07T15:43:28.750760 #27193]  INFO -- default-ubuntu-1204:   * execute[install-netvault] action run
+I, [2014-10-07T15:43:28.750827 #27193]  INFO -- default-ubuntu-1204:     - execute cd /tmp/kitchen/cache/netvault; bash install responsefile
+I, [2014-10-07T15:43:28.751061 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:43:28.751498 #27193]  INFO -- default-ubuntu-1204: Running handlers:
+I, [2014-10-07T15:43:28.756306 #27193]  INFO -- default-ubuntu-1204: Run options: -v --seed 57189
+I, [2014-10-07T15:43:28.756498 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:43:28.756998 #27193]  INFO -- default-ubuntu-1204: # Running tests:
+I, [2014-10-07T15:43:28.757207 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:43:28.847685 #27193]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default#test_0001_should have the development libraries for libaio1 installed = 0.09 s = .
+I, [2014-10-07T15:43:28.906354 #27193]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default#test_0002_should have the development libraries for libstdc++5 installed = 0.06 s = .
+I, [2014-10-07T15:43:28.910535 #27193]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default#test_0003_should have a directory called /tmp/netvault = 0.00 s = .
+I, [2014-10-07T15:43:28.914860 #27193]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default::should have a responsefile which contains#test_0004_anonymous = 0.00 s = .
+I, [2014-10-07T15:43:28.916275 #27193]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default::should have a responsefile which contains#test_0002_anonymous = 0.00 s = .
+I, [2014-10-07T15:43:28.917683 #27193]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default::should have a responsefile which contains#test_0003_anonymous = 0.00 s = .
+I, [2014-10-07T15:43:28.919040 #27193]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default::should have a responsefile which contains#test_0001_anonymous = 0.00 s = .
+I, [2014-10-07T15:43:28.919229 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:43:28.919539 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:43:28.919755 #27193]  INFO -- default-ubuntu-1204: Finished tests in 0.162437s, 43.0936 tests/s, 43.0936 assertions/s.
+I, [2014-10-07T15:43:28.919921 #27193]  INFO -- default-ubuntu-1204: 
+I, [2014-10-07T15:43:28.920233 #27193]  INFO -- default-ubuntu-1204: 7 tests, 7 assertions, 0 failures, 0 errors, 0 skips
+I, [2014-10-07T15:43:28.920842 #27193]  INFO -- default-ubuntu-1204:   - MiniTest::Chef::Handler
+I, [2014-10-07T15:43:28.921388 #27193]  INFO -- default-ubuntu-1204: Running handlers complete
+I, [2014-10-07T15:43:28.921804 #27193]  INFO -- default-ubuntu-1204: Chef Client finished, 16/18 resources updated in 129.926786978 seconds
+I, [2014-10-07T15:43:29.022278 #27193]  INFO -- default-ubuntu-1204: Finished converging <default-ubuntu-1204> (3m0.22s).
+I, [2014-10-07T15:43:29.022402 #27193]  INFO -- default-ubuntu-1204: -----> Setting up <default-ubuntu-1204>...
+I, [2014-10-07T15:43:29.034967 #27193]  INFO -- default-ubuntu-1204: Finished setting up <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-07T15:43:29.035099 #27193]  INFO -- default-ubuntu-1204: -----> Verifying <default-ubuntu-1204>...
+I, [2014-10-07T15:43:29.039641 #27193]  INFO -- default-ubuntu-1204: Finished verifying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-07T15:43:29.042092 #27193]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:43:30.800452 #27193]  INFO -- default-ubuntu-1204: You appear to be running Vagrant outside of the official installers.
+I, [2014-10-07T15:43:30.801073 #27193]  INFO -- default-ubuntu-1204: Note that the installers are what ensure that Vagrant has all required
+I, [2014-10-07T15:43:30.801118 #27193]  INFO -- default-ubuntu-1204: dependencies, and Vagrant assumes that these dependencies exist. By
+I, [2014-10-07T15:43:30.801148 #27193]  INFO -- default-ubuntu-1204: running outside of the installer environment, Vagrant may not function
+I, [2014-10-07T15:43:30.801171 #27193]  INFO -- default-ubuntu-1204: properly. To remove this warning, install Vagrant using one of the
+I, [2014-10-07T15:43:30.801259 #27193]  INFO -- default-ubuntu-1204: official packages from vagrantup.com.
+I, [2014-10-07T15:43:31.891678 #27193]  INFO -- default-ubuntu-1204: ==> default: Forcing shutdown of VM...
+I, [2014-10-07T15:43:33.811036 #27193]  INFO -- default-ubuntu-1204: ==> default: Destroying VM and associated drives...
+I, [2014-10-07T15:43:34.091291 #27193]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2014-10-07T15:43:34.092277 #27193]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m5.05s).
+I, [2014-10-07T15:43:34.100448 #27193]  INFO -- default-ubuntu-1204: Finished testing <default-ubuntu-1204> (3m40.91s).
+I, [2014-10-08T11:12:28.140889 #41808]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-08T11:12:28.142607 #41808]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-08T11:12:28.144070 #41808]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-08T11:12:28.144304 #41808]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-10-08T11:12:28.144417 #41808]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-08T11:12:29.906040 #41808]  INFO -- default-ubuntu-1204: You appear to be running Vagrant outside of the official installers.
+I, [2014-10-08T11:12:29.906121 #41808]  INFO -- default-ubuntu-1204: Note that the installers are what ensure that Vagrant has all required
+I, [2014-10-08T11:12:29.906141 #41808]  INFO -- default-ubuntu-1204: dependencies, and Vagrant assumes that these dependencies exist. By
+I, [2014-10-08T11:12:29.906156 #41808]  INFO -- default-ubuntu-1204: running outside of the installer environment, Vagrant may not function
+I, [2014-10-08T11:12:29.906170 #41808]  INFO -- default-ubuntu-1204: properly. To remove this warning, install Vagrant using one of the
+I, [2014-10-08T11:12:29.906198 #41808]  INFO -- default-ubuntu-1204: official packages from vagrantup.com.
+I, [2014-10-08T11:12:30.190789 #41808]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-10-08T11:12:30.398357 #41808]  INFO -- default-ubuntu-1204: ==> default: Importing base box 'opscode-ubuntu-12.04'...
+I, [2014-10-08T11:12:40.340105 #41808]  INFO -- default-ubuntu-1204: [KProgress: 10%[KProgress: 20%[KProgress: 40%[KProgress: 50%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2014-10-08T11:12:40.793743 #41808]  INFO -- default-ubuntu-1204: ==> default: Setting the name of the VM: default-ubuntu-1204_default_1412784760772_87176
+I, [2014-10-08T11:12:40.992740 #41808]  INFO -- default-ubuntu-1204: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2014-10-08T11:12:41.021519 #41808]  INFO -- default-ubuntu-1204: ==> default: Clearing any previously set network interfaces...
+I, [2014-10-08T11:12:41.056957 #41808]  INFO -- default-ubuntu-1204: ==> default: Preparing network interfaces based on configuration...
+I, [2014-10-08T11:12:41.057308 #41808]  INFO -- default-ubuntu-1204:     default: Adapter 1: nat
+I, [2014-10-08T11:12:41.087362 #41808]  INFO -- default-ubuntu-1204: ==> default: Forwarding ports...
+I, [2014-10-08T11:12:41.137264 #41808]  INFO -- default-ubuntu-1204:     default: 22 => 2200 (adapter 1)
+I, [2014-10-08T11:12:41.221322 #41808]  INFO -- default-ubuntu-1204: ==> default: Booting VM...
+I, [2014-10-08T11:12:41.697544 #41808]  INFO -- default-ubuntu-1204: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2200
+I, [2014-10-08T11:12:41.697674 #41808]  INFO -- default-ubuntu-1204:     default: SSH username: vagrant
+I, [2014-10-08T11:12:41.697767 #41808]  INFO -- default-ubuntu-1204:     default: SSH auth method: private key
+I, [2014-10-08T11:12:56.801488 #41808]  INFO -- default-ubuntu-1204:     default: Warning: Connection timeout. Retrying...
+I, [2014-10-08T11:12:57.471284 #41808]  INFO -- default-ubuntu-1204: ==> default: Machine booted and ready!
+I, [2014-10-08T11:12:57.471505 #41808]  INFO -- default-ubuntu-1204: ==> default: Checking for guest additions in VM...
+I, [2014-10-08T11:12:57.496483 #41808]  INFO -- default-ubuntu-1204: ==> default: Setting hostname...
+I, [2014-10-08T11:13:00.101319 #41808]  INFO -- default-ubuntu-1204: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-10-08T11:13:01.555566 #41808]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-10-08T11:13:01.557395 #41808]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m33.41s).
+I, [2014-10-08T11:13:01.557516 #41808]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-10-08T11:13:01.562128 #41808]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-10-08T11:13:01.562223 #41808]  INFO -- default-ubuntu-1204: Preparing dna.json
+I, [2014-10-08T11:13:01.562780 #41808]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf 3.1.5...
+I, [2014-10-08T11:13:01.855423 #41808]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-10-08T11:13:01.859059 #41808]  INFO -- default-ubuntu-1204: Preparing solo.rb
+I, [2014-10-08T11:13:01.915578 #41808]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (install only if missing)
+I, [2014-10-08T11:13:01.915947 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:13:01.916003 #41808]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-10-08T11:13:01.916783 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:13:02.265777 #41808]  INFO -- default-ubuntu-1204: Downloading Chef  for ubuntu...
+I, [2014-10-08T11:13:02.267503 #41808]  INFO -- default-ubuntu-1204: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=12.04&m=x86_64
+I, [2014-10-08T11:13:02.267918 #41808]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh.1155/metadata.txt
+I, [2014-10-08T11:13:02.268419 #41808]  INFO -- default-ubuntu-1204: trying wget...
+I, [2014-10-08T11:13:02.453855 #41808]  INFO -- default-ubuntu-1204: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.16.2-1_amd64.deb
+I, [2014-10-08T11:13:02.454379 #41808]  INFO -- default-ubuntu-1204: md5	a2b20f34bc7d7dc0a6e0636caa314c03
+I, [2014-10-08T11:13:02.454754 #41808]  INFO -- default-ubuntu-1204: sha256	dd3360ea2fd238f3bec962bdb3bb179060701bc67ac5cad3eed4be1b1c1afe8f
+I, [2014-10-08T11:13:02.457546 #41808]  INFO -- default-ubuntu-1204: downloaded metadata file looks valid...
+I, [2014-10-08T11:13:02.464085 #41808]  INFO -- default-ubuntu-1204: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.16.2-1_amd64.deb
+I, [2014-10-08T11:13:02.464453 #41808]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh.1155/chef_11.16.2-1_amd64.deb
+I, [2014-10-08T11:13:02.464669 #41808]  INFO -- default-ubuntu-1204: trying wget...
+I, [2014-10-08T11:13:08.858485 #41808]  INFO -- default-ubuntu-1204: Comparing checksum with sha256sum...
+I, [2014-10-08T11:13:09.028165 #41808]  INFO -- default-ubuntu-1204: Installing Chef 
+I, [2014-10-08T11:13:09.028474 #41808]  INFO -- default-ubuntu-1204: installing with dpkg...
+I, [2014-10-08T11:13:09.073382 #41808]  INFO -- default-ubuntu-1204: Selecting previously unselected package chef.
+I, [2014-10-08T11:13:09.183546 #41808]  INFO -- default-ubuntu-1204: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56035 files and directories currently installed.)
+I, [2014-10-08T11:13:09.185701 #41808]  INFO -- default-ubuntu-1204: Unpacking chef (from .../chef_11.16.2-1_amd64.deb) ...
+I, [2014-10-08T11:13:13.584782 #41808]  INFO -- default-ubuntu-1204: Setting up chef (11.16.2-1) ...
+I, [2014-10-08T11:13:13.637770 #41808]  INFO -- default-ubuntu-1204: Thank you for installing Chef!
+I, [2014-10-08T11:13:13.670326 #41808]  INFO -- default-ubuntu-1204: Transferring files to <default-ubuntu-1204>
+I, [2014-10-08T11:13:14.908248 #41808]  INFO -- default-ubuntu-1204: [2014-10-08T16:13:14+00:00] WARN: 
+I, [2014-10-08T11:13:14.908686 #41808]  INFO -- default-ubuntu-1204: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-10-08T11:13:14.908895 #41808]  INFO -- default-ubuntu-1204: SSL validation of HTTPS requests is disabled. HTTPS connections are still
+I, [2014-10-08T11:13:14.909287 #41808]  INFO -- default-ubuntu-1204: encrypted, but chef is not able to detect forged replies or man in the middle
+I, [2014-10-08T11:13:14.909572 #41808]  INFO -- default-ubuntu-1204: attacks.
+I, [2014-10-08T11:13:14.909800 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:13:14.910059 #41808]  INFO -- default-ubuntu-1204: To fix this issue add an entry like this to your configuration file:
+I, [2014-10-08T11:13:14.910282 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:13:14.910543 #41808]  INFO -- default-ubuntu-1204: ```
+I, [2014-10-08T11:13:14.910752 #41808]  INFO -- default-ubuntu-1204:   # Verify all HTTPS connections (recommended)
+I, [2014-10-08T11:13:14.910952 #41808]  INFO -- default-ubuntu-1204:   ssl_verify_mode :verify_peer
+I, [2014-10-08T11:13:14.911165 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:13:14.911387 #41808]  INFO -- default-ubuntu-1204:   # OR, Verify only connections to chef-server
+I, [2014-10-08T11:13:14.911600 #41808]  INFO -- default-ubuntu-1204:   verify_api_cert true
+I, [2014-10-08T11:13:14.911802 #41808]  INFO -- default-ubuntu-1204: ```
+I, [2014-10-08T11:13:14.911925 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:13:14.912138 #41808]  INFO -- default-ubuntu-1204: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-10-08T11:13:14.912378 #41808]  INFO -- default-ubuntu-1204: `knife ssl check` command like so:
+I, [2014-10-08T11:13:14.912527 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:13:14.912742 #41808]  INFO -- default-ubuntu-1204: ```
+I, [2014-10-08T11:13:14.912927 #41808]  INFO -- default-ubuntu-1204:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-10-08T11:13:14.913124 #41808]  INFO -- default-ubuntu-1204: ```
+I, [2014-10-08T11:13:14.913240 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:13:14.913455 #41808]  INFO -- default-ubuntu-1204: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-10-08T11:13:14.913614 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:13:14.913793 #41808]  INFO -- default-ubuntu-1204: Starting Chef Client, version 11.16.2
+I, [2014-10-08T11:13:16.937022 #41808]  INFO -- default-ubuntu-1204: Compiling Cookbooks...
+I, [2014-10-08T11:13:16.946175 #41808]  INFO -- default-ubuntu-1204: Recipe: minitest-handler::default
+I, [2014-10-08T11:13:16.947586 #41808]  INFO -- default-ubuntu-1204:   * chef_gem[ci_reporter] action nothing (skipped due to action :nothing)
+I, [2014-10-08T11:13:23.763158 #41808]  INFO -- default-ubuntu-1204:   * chef_gem[ci_reporter] action install
+I, [2014-10-08T11:13:23.763215 #41808]  INFO -- default-ubuntu-1204:     - install version 1.9.2 of package ci_reporter
+I, [2014-10-08T11:13:23.763235 #41808]  INFO -- default-ubuntu-1204:   * chef_gem[minitest] action nothing (skipped due to action :nothing)
+I, [2014-10-08T11:13:23.763251 #41808]  INFO -- default-ubuntu-1204:   * chef_gem[minitest] action install (skipped due to only_if)
+I, [2014-10-08T11:13:23.763266 #41808]  INFO -- default-ubuntu-1204:   * chef_gem[minitest-chef-handler] action nothing (skipped due to action :nothing)
+I, [2014-10-08T11:14:18.557122 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:14:18.558335 #41808]  INFO -- default-ubuntu-1204:     - install version 1.0.3 of package minitest-chef-handler
+I, [2014-10-08T11:14:18.636636 #41808]  INFO -- default-ubuntu-1204:   Converging 14 resources
+I, [2014-10-08T11:14:18.637711 #41808]  INFO -- default-ubuntu-1204:   * chef_gem[ci_reporter] action nothing (skipped due to action :nothing)
+I, [2014-10-08T11:14:18.638542 #41808]  INFO -- default-ubuntu-1204:   * chef_gem[minitest] action nothing (skipped due to action :nothing)
+I, [2014-10-08T11:14:18.639350 #41808]  INFO -- default-ubuntu-1204:   * chef_gem[minitest-chef-handler] action nothing (skipped due to action :nothing)
+I, [2014-10-08T11:14:18.640629 #41808]  INFO -- default-ubuntu-1204:   * directory[delete minitest test location] action delete (up to date)
+I, [2014-10-08T11:14:18.641875 #41808]  INFO -- default-ubuntu-1204:   * directory[create minitest test location] action create
+I, [2014-10-08T11:14:18.643261 #41808]  INFO -- default-ubuntu-1204:     - create new directory /var/chef/minitest
+I, [2014-10-08T11:14:18.643903 #41808]  INFO -- default-ubuntu-1204:     - change mode from '' to '0775'
+I, [2014-10-08T11:14:18.644446 #41808]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'
+I, [2014-10-08T11:14:18.645664 #41808]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'
+I, [2014-10-08T11:14:18.647139 #41808]  INFO -- default-ubuntu-1204:   * ruby_block[load_tests_and_register_handler] action run
+I, [2014-10-08T11:14:18.647711 #41808]  INFO -- default-ubuntu-1204:   Recipe: <Dynamically Defined Resource>
+I, [2014-10-08T11:14:18.648903 #41808]  INFO -- default-ubuntu-1204:     * directory[/var/chef/minitest/minitest-handler] action create
+I, [2014-10-08T11:14:18.650226 #41808]  INFO -- default-ubuntu-1204:       - create new directory /var/chef/minitest/minitest-handler
+I, [2014-10-08T11:14:18.653893 #41808]  INFO -- default-ubuntu-1204:     * directory[/var/chef/minitest/netvault_test] action create
+I, [2014-10-08T11:14:18.654759 #41808]  INFO -- default-ubuntu-1204:       - create new directory /var/chef/minitest/netvault_test
+I, [2014-10-08T11:14:18.656839 #41808]  INFO -- default-ubuntu-1204:     * directory[/var/chef/minitest/netvault_test] action create (up to date)
+I, [2014-10-08T11:14:18.658496 #41808]  INFO -- default-ubuntu-1204:     * cookbook_file[/var/chef/minitest/netvault_test/default_test.rb] action create
+I, [2014-10-08T11:14:18.661415 #41808]  INFO -- default-ubuntu-1204:       - create new file /var/chef/minitest/netvault_test/default_test.rb
+I, [2014-10-08T11:14:18.661846 #41808]  INFO -- default-ubuntu-1204:       - update content in file /var/chef/minitest/netvault_test/default_test.rb from none to 54ffe4
+I, [2014-10-08T11:14:18.662457 #41808]  INFO -- default-ubuntu-1204:       --- /var/chef/minitest/netvault_test/default_test.rb	2014-10-08 16:14:18.493699363 +0000
+I, [2014-10-08T11:14:18.663275 #41808]  INFO -- default-ubuntu-1204:       +++ /tmp/.default_test.rb20141008-1239-1ew4iy4	2014-10-08 16:14:18.493699363 +0000
+I, [2014-10-08T11:14:18.663955 #41808]  INFO -- default-ubuntu-1204:       @@ -1 +1,31 @@
+I, [2014-10-08T11:14:18.664488 #41808]  INFO -- default-ubuntu-1204:       +require 'minitest/spec'
+I, [2014-10-08T11:14:18.664920 #41808]  INFO -- default-ubuntu-1204:       +
+I, [2014-10-08T11:14:18.665348 #41808]  INFO -- default-ubuntu-1204:       +class NetvaultSpec < MiniTest::Chef::Spec
+I, [2014-10-08T11:14:18.665824 #41808]  INFO -- default-ubuntu-1204:       +  describe "netvault" do
+I, [2014-10-08T11:14:18.666243 #41808]  INFO -- default-ubuntu-1204:       +    include MiniTest::Chef::Resources
+I, [2014-10-08T11:14:18.666797 #41808]  INFO -- default-ubuntu-1204:       +    include MiniTest::Chef::Assertions
+I, [2014-10-08T11:14:18.667333 #41808]  INFO -- default-ubuntu-1204:       +
+I, [2014-10-08T11:14:18.667940 #41808]  INFO -- default-ubuntu-1204:       +    describe_recipe "netvault_test::default" do
+I, [2014-10-08T11:14:18.668459 #41808]  INFO -- default-ubuntu-1204:       +      it "should have the development libraries for libaio1 installed" do
+I, [2014-10-08T11:14:18.669224 #41808]  INFO -- default-ubuntu-1204:       +        package('libaio1').must_be_installed
+I, [2014-10-08T11:14:18.669754 #41808]  INFO -- default-ubuntu-1204:       +      end
+I, [2014-10-08T11:14:18.670271 #41808]  INFO -- default-ubuntu-1204:       +      it "should have the development libraries for libstdc++5 installed" do
+I, [2014-10-08T11:14:18.670783 #41808]  INFO -- default-ubuntu-1204:       +        package('libstdc++5').must_be_installed
+I, [2014-10-08T11:14:18.671273 #41808]  INFO -- default-ubuntu-1204:       +      end
+I, [2014-10-08T11:14:18.671860 #41808]  INFO -- default-ubuntu-1204:       +
+I, [2014-10-08T11:14:18.672167 #41808]  INFO -- default-ubuntu-1204:       +      it "should have a directory called /tmp/netvault" do
+I, [2014-10-08T11:14:18.672514 #41808]  INFO -- default-ubuntu-1204: +        directory("#{Chef::Config['file_cache_path']}/netvault").must_exist
+I, [2014-10-08T11:14:18.672560 #41808]  INFO -- default-ubuntu-1204:       +      end
+I, [2014-10-08T11:14:18.672769 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:14:18.673261 #41808]  INFO -- default-ubuntu-1204: +      describe "should have a responsefile which contains" do
+I, [2014-10-08T11:14:18.674058 #41808]  INFO -- default-ubuntu-1204:       +        let(:config) { file("#{Chef::Config['file_cache_path']}/netvault/responsefile") }
+I, [2014-10-08T11:14:18.674106 #41808]  INFO -- default-ubuntu-1204:       +
+I, [2014-10-08T11:14:18.674123 #41808]  INFO -- default-ubuntu-1204:       +        it { config.must_exist }
+I, [2014-10-08T11:14:18.674138 #41808]  INFO -- default-ubuntu-1204:       +        it { config.must_include 'PKG_BASE="/usr/local/netvault"' }
+I, [2014-10-08T11:14:18.674151 #41808]  INFO -- default-ubuntu-1204:       +        it { config.must_include 'PASSWORD="PMDSupPorT123"' }
+I, [2014-10-08T11:14:18.674185 #41808]  INFO -- default-ubuntu-1204:       +        it { config.must_include 'LOGICAL_NAME="default-ubuntu-1204"' }
+I, [2014-10-08T11:14:18.674217 #41808]  INFO -- default-ubuntu-1204:       +      end
+I, [2014-10-08T11:14:18.674231 #41808]  INFO -- default-ubuntu-1204:       +    end
+I, [2014-10-08T11:14:18.674244 #41808]  INFO -- default-ubuntu-1204:       +  end
+I, [2014-10-08T11:14:18.674502 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:14:18.675556 #41808]  INFO -- default-ubuntu-1204:     * directory[/var/chef/minitest/netvault] action create
+I, [2014-10-08T11:14:18.676417 #41808]  INFO -- default-ubuntu-1204:       - create new directory /var/chef/minitest/netvault
+I, [2014-10-08T11:14:18.678002 #41808]  INFO -- default-ubuntu-1204:     - execute the ruby block load_tests_and_register_handler
+I, [2014-10-08T11:14:18.678379 #41808]  INFO -- default-ubuntu-1204: Recipe: netvault::default
+I, [2014-10-08T11:14:22.546324 #41808]  INFO -- default-ubuntu-1204:   * package[libaio1] action install
+I, [2014-10-08T11:14:22.547172 #41808]  INFO -- default-ubuntu-1204:     - install version 0.3.109-2ubuntu1 of package libaio1
+I, [2014-10-08T11:14:24.240541 #41808]  INFO -- default-ubuntu-1204:   * package[libstdc++5] action install
+I, [2014-10-08T11:14:24.240629 #41808]  INFO -- default-ubuntu-1204:     - install version 1:3.3.6-25ubuntu1 of package libstdc++5
+I, [2014-10-08T11:14:24.240677 #41808]  INFO -- default-ubuntu-1204:   * directory[/var/lock/subsys] action create
+I, [2014-10-08T11:14:24.240718 #41808]  INFO -- default-ubuntu-1204:     - create new directory /var/lock/subsys
+I, [2014-10-08T11:14:24.240754 #41808]  INFO -- default-ubuntu-1204:     - change mode from '' to '0755'
+I, [2014-10-08T11:14:24.240788 #41808]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'
+I, [2014-10-08T11:14:24.240823 #41808]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'
+I, [2014-10-08T11:14:24.240856 #41808]  INFO -- default-ubuntu-1204:   * link[/usr/lib64] action create
+I, [2014-10-08T11:14:24.241299 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:14:24.242336 #41808]  INFO -- default-ubuntu-1204:   * remote_file[/tmp/kitchen/cache/netvault-R2014APR29-SECRETARIAT-V10-Linux-Pure64-ClientOnly.tar.gz] action create
+I, [2014-10-08T11:14:33.171784 #41808]  INFO -- default-ubuntu-1204:     - create new file /tmp/kitchen/cache/netvault-R2014APR29-SECRETARIAT-V10-Linux-Pure64-ClientOnly.tar.gz
+I, [2014-10-08T11:14:33.172527 #41808]  INFO -- default-ubuntu-1204:     - update content in file /tmp/kitchen/cache/netvault-R2014APR29-SECRETARIAT-V10-Linux-Pure64-ClientOnly.tar.gz from none to a587ba
+I, [2014-10-08T11:14:33.174788 #41808]  INFO -- default-ubuntu-1204:     (file sizes exceed 10000000 bytes, diff output suppressed)
+I, [2014-10-08T11:14:33.175475 #41808]  INFO -- default-ubuntu-1204:     - change mode from '' to '0644'
+I, [2014-10-08T11:14:33.175909 #41808]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'
+I, [2014-10-08T11:14:33.176769 #41808]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'
+I, [2014-10-08T11:14:33.973480 #41808]  INFO -- default-ubuntu-1204:   * bash[extract_module] action run
+I, [2014-10-08T11:14:33.974932 #41808]  INFO -- default-ubuntu-1204:     - execute "bash"  "/tmp/chef-script20141008-1239-13n6qvb"
+I, [2014-10-08T11:14:33.979075 #41808]  INFO -- default-ubuntu-1204:   * template[/tmp/kitchen/cache/netvault/responsefile] action create
+I, [2014-10-08T11:14:33.981970 #41808]  INFO -- default-ubuntu-1204:     - create new file /tmp/kitchen/cache/netvault/responsefile
+I, [2014-10-08T11:14:33.982618 #41808]  INFO -- default-ubuntu-1204:     - update content in file /tmp/kitchen/cache/netvault/responsefile from none to ee3e8e
+I, [2014-10-08T11:14:33.983401 #41808]  INFO -- default-ubuntu-1204:     --- /tmp/kitchen/cache/netvault/responsefile	2014-10-08 16:14:33.825361599 +0000
+I, [2014-10-08T11:14:33.984278 #41808]  INFO -- default-ubuntu-1204:     +++ /tmp/chef-rendered-template20141008-1239-mhzoh8	2014-10-08 16:14:33.825361599 +0000
+I, [2014-10-08T11:14:33.984934 #41808]  INFO -- default-ubuntu-1204:     @@ -1 +1,5 @@
+I, [2014-10-08T11:14:33.985377 #41808]  INFO -- default-ubuntu-1204:     +PKG_BASE="/usr/local/netvault"
+I, [2014-10-08T11:14:33.985893 #41808]  INFO -- default-ubuntu-1204:     +PASSWORD="PMDSupPorT123"
+I, [2014-10-08T11:14:33.986284 #41808]  INFO -- default-ubuntu-1204:     +LOGICAL_NAME="default-ubuntu-1204"
+I, [2014-10-08T11:14:33.987337 #41808]  INFO -- default-ubuntu-1204:     +NVLANGUAGE="English"
+I, [2014-10-08T11:14:38.726996 #41808]  INFO -- default-ubuntu-1204:   * execute[install-netvault] action run
+I, [2014-10-08T11:14:38.727091 #41808]  INFO -- default-ubuntu-1204:     - execute cd /tmp/kitchen/cache/netvault; bash install responsefile
+I, [2014-10-08T11:14:38.727420 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:14:38.727869 #41808]  INFO -- default-ubuntu-1204: Running handlers:
+I, [2014-10-08T11:14:38.735013 #41808]  INFO -- default-ubuntu-1204: Run options: -v --seed 36793
+I, [2014-10-08T11:14:38.735242 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:14:38.735614 #41808]  INFO -- default-ubuntu-1204: # Running tests:
+I, [2014-10-08T11:14:38.735816 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:14:38.825987 #41808]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default#test_0001_should have the development libraries for libaio1 installed = 0.09 s = .
+I, [2014-10-08T11:14:38.903695 #41808]  INFO -- default-ubuntu-1204: 0.08 s = .
+I, [2014-10-08T11:14:38.905123 #41808]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default#test_0003_should have a directory called /tmp/netvault = 0.00 s = .
+I, [2014-10-08T11:14:38.907165 #41808]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default::should have a responsefile which contains#test_0003_anonymous = 0.00 s = .
+I, [2014-10-08T11:14:38.908701 #41808]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default::should have a responsefile which contains#test_0002_anonymous = 0.00 s = .
+I, [2014-10-08T11:14:38.910114 #41808]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default::should have a responsefile which contains#test_0001_anonymous = 0.00 s = .
+I, [2014-10-08T11:14:38.911197 #41808]  INFO -- default-ubuntu-1204: netvault::recipe::netvault_test::default::should have a responsefile which contains#test_0004_anonymous = 0.00 s = .
+I, [2014-10-08T11:14:38.911331 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:14:38.911566 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:14:38.911867 #41808]  INFO -- default-ubuntu-1204: Finished tests in 0.176713s, 39.6123 tests/s, 39.6123 assertions/s.
+I, [2014-10-08T11:14:38.912039 #41808]  INFO -- default-ubuntu-1204: 
+I, [2014-10-08T11:14:38.912443 #41808]  INFO -- default-ubuntu-1204: 7 tests, 7 assertions, 0 failures, 0 errors, 0 skips
+I, [2014-10-08T11:14:38.912927 #41808]  INFO -- default-ubuntu-1204:   - MiniTest::Chef::Handler
+I, [2014-10-08T11:14:38.913306 #41808]  INFO -- default-ubuntu-1204: Running handlers complete
+I, [2014-10-08T11:14:38.913890 #41808]  INFO -- default-ubuntu-1204: Chef Client finished, 16/18 resources updated in 84.069024162 seconds
+I, [2014-10-08T11:14:39.005390 #41808]  INFO -- default-ubuntu-1204: Finished converging <default-ubuntu-1204> (1m37.44s).
+I, [2014-10-08T11:14:39.005528 #41808]  INFO -- default-ubuntu-1204: -----> Setting up <default-ubuntu-1204>...
+I, [2014-10-08T11:14:39.017123 #41808]  INFO -- default-ubuntu-1204: Finished setting up <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-08T11:14:39.017224 #41808]  INFO -- default-ubuntu-1204: -----> Verifying <default-ubuntu-1204>...
+I, [2014-10-08T11:14:39.020509 #41808]  INFO -- default-ubuntu-1204: Finished verifying <default-ubuntu-1204> (0m0.00s).
+I, [2014-10-08T11:14:39.023982 #41808]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-08T11:14:40.159578 #41808]  INFO -- default-ubuntu-1204: You appear to be running Vagrant outside of the official installers.
+I, [2014-10-08T11:14:40.159846 #41808]  INFO -- default-ubuntu-1204: Note that the installers are what ensure that Vagrant has all required
+I, [2014-10-08T11:14:40.159868 #41808]  INFO -- default-ubuntu-1204: dependencies, and Vagrant assumes that these dependencies exist. By
+I, [2014-10-08T11:14:40.159883 #41808]  INFO -- default-ubuntu-1204: running outside of the installer environment, Vagrant may not function
+I, [2014-10-08T11:14:40.159896 #41808]  INFO -- default-ubuntu-1204: properly. To remove this warning, install Vagrant using one of the
+I, [2014-10-08T11:14:40.159909 #41808]  INFO -- default-ubuntu-1204: official packages from vagrantup.com.
+I, [2014-10-08T11:14:40.928856 #41808]  INFO -- default-ubuntu-1204: ==> default: Forcing shutdown of VM...
+I, [2014-10-08T11:14:42.777236 #41808]  INFO -- default-ubuntu-1204: ==> default: Destroying VM and associated drives...
+I, [2014-10-08T11:14:43.027506 #41808]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2014-10-08T11:14:43.028853 #41808]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m4.00s).
+I, [2014-10-08T11:14:43.029230 #41808]  INFO -- default-ubuntu-1204: Finished testing <default-ubuntu-1204> (2m14.89s).

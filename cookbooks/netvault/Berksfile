@@ -1,0 +1,6 @@
+source "https://supermarket.getchef.com"
+
+metadata
+
+cookbook "minitest-handler"
+cookbook "netvault_test", :path => "./test/cookbooks/netvault_test"

@@ -1,0 +1,513 @@
+I, [2014-10-07T13:14:37.690032 #66788]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-07T13:14:39.794738 #66788]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T13:14:39.794976 #66788]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T13:14:39.797922 #66788]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T13:14:39.798070 #66788]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+E, [2014-10-07T13:14:40.435683 #66788] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-07T13:14:40.435744 #66788] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-07T13:14:40.435776 #66788] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2014-10-07T13:14:40.435821 #66788] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-07T13:14:40.435859 #66788] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T13:14:40.435899 #66788] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T13:14:40.435932 #66788] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-07T13:14:40.435951 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T13:14:40.435996 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T13:14:40.436024 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T13:14:40.436044 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T13:14:40.436062 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T13:14:40.436079 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T13:14:40.436098 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T13:14:40.436119 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T13:14:40.436138 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T13:14:40.436155 #66788] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T13:14:40.436174 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T13:14:40.436194 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T13:14:40.436213 #66788] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:14:40.436232 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T13:14:40.436251 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T13:14:40.436268 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T13:14:40.436286 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T13:14:40.436308 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T13:14:40.436326 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T13:14:40.436340 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T13:14:40.436355 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T13:14:40.436371 #66788] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:14:40.436391 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T13:14:40.436408 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T13:14:40.436434 #66788] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T13:14:40.436453 #66788] ERROR -- Kitchen: ----------------------
+I, [2014-10-07T13:14:52.270753 #66847]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-07T13:14:53.063242 #66847]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T13:14:53.063615 #66847]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T13:14:53.073683 #66847]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T13:14:53.073909 #66847]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+E, [2014-10-07T13:14:53.685004 #66847] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-07T13:14:53.685072 #66847] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-07T13:14:53.685111 #66847] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2014-10-07T13:14:53.685156 #66847] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-07T13:14:53.685200 #66847] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T13:14:53.685233 #66847] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T13:14:53.685266 #66847] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-07T13:14:53.685289 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T13:14:53.685306 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T13:14:53.685326 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T13:14:53.685342 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T13:14:53.685356 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T13:14:53.685372 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T13:14:53.685389 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T13:14:53.685404 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T13:14:53.685418 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T13:14:53.685436 #66847] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T13:14:53.685453 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T13:14:53.685467 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T13:14:53.685483 #66847] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:14:53.685502 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T13:14:53.685520 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T13:14:53.685539 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T13:14:53.685558 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T13:14:53.685577 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T13:14:53.685596 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T13:14:53.685614 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T13:14:53.685629 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T13:14:53.685646 #66847] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:14:53.685670 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T13:14:53.685687 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T13:14:53.685702 #66847] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T13:14:53.685719 #66847] ERROR -- Kitchen: ----------------------
+I, [2014-10-07T13:15:46.006187 #66932]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-07T13:15:46.781710 #66932]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T13:15:46.782104 #66932]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T13:15:46.792134 #66932]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T13:15:46.792374 #66932]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+E, [2014-10-07T13:15:47.401481 #66932] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-07T13:15:47.401549 #66932] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-07T13:15:47.401595 #66932] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2014-10-07T13:15:47.401643 #66932] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-07T13:15:47.401688 #66932] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T13:15:47.401713 #66932] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T13:15:47.401749 #66932] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-07T13:15:47.401773 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T13:15:47.401796 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T13:15:47.401818 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T13:15:47.401838 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T13:15:47.401859 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T13:15:47.401876 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T13:15:47.401895 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T13:15:47.401915 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T13:15:47.401936 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T13:15:47.401954 #66932] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T13:15:47.401974 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T13:15:47.401993 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T13:15:47.402013 #66932] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:15:47.402030 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T13:15:47.402047 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T13:15:47.402064 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T13:15:47.402082 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T13:15:47.402101 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T13:15:47.402120 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T13:15:47.402140 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T13:15:47.402163 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T13:15:47.402186 #66932] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T13:15:47.402204 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T13:15:47.402225 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T13:15:47.402244 #66932] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T13:15:47.402260 #66932] ERROR -- Kitchen: ----------------------
+I, [2014-10-07T15:00:14.506195 #82046]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-07T15:00:15.534997 #82046]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T15:00:15.537483 #82046]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:00:15.542149 #82046]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T15:00:15.542302 #82046]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+E, [2014-10-07T15:00:16.159615 #82046] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-07T15:00:16.159675 #82046] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-07T15:00:16.159714 #82046] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2014-10-07T15:00:16.159734 #82046] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-07T15:00:16.159765 #82046] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:00:16.159795 #82046] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:00:16.159849 #82046] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-07T15:00:16.159883 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T15:00:16.159904 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T15:00:16.159919 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T15:00:16.159936 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T15:00:16.159951 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T15:00:16.159971 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T15:00:16.159985 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T15:00:16.160002 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T15:00:16.160016 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T15:00:16.160032 #82046] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T15:00:16.160046 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T15:00:16.160063 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T15:00:16.160080 #82046] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:00:16.160094 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T15:00:16.160112 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T15:00:16.160127 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T15:00:16.160149 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T15:00:16.160167 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T15:00:16.160181 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T15:00:16.160195 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T15:00:16.160211 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T15:00:16.160226 #82046] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:00:16.160242 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T15:00:16.160260 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T15:00:16.160275 #82046] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T15:00:16.160291 #82046] ERROR -- Kitchen: ----------------------
+I, [2014-10-07T15:01:18.493404 #82133]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-07T15:01:19.273450 #82133]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T15:01:19.273784 #82133]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:01:19.284423 #82133]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T15:01:19.284673 #82133]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+E, [2014-10-07T15:01:19.857865 #82133] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-07T15:01:19.857926 #82133] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-07T15:01:19.857957 #82133] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2014-10-07T15:01:19.857993 #82133] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-07T15:01:19.858034 #82133] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:01:19.858065 #82133] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:01:19.858097 #82133] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-07T15:01:19.858124 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T15:01:19.858154 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T15:01:19.858168 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T15:01:19.858186 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T15:01:19.858203 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T15:01:19.858221 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T15:01:19.858237 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T15:01:19.858255 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T15:01:19.858271 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T15:01:19.858288 #82133] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T15:01:19.858306 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T15:01:19.858325 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T15:01:19.858348 #82133] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:01:19.858367 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T15:01:19.858383 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T15:01:19.858398 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T15:01:19.858417 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T15:01:19.858431 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T15:01:19.858446 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T15:01:19.858464 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T15:01:19.858478 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T15:01:19.858494 #82133] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:01:19.858508 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T15:01:19.858525 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T15:01:19.858543 #82133] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T15:01:19.858560 #82133] ERROR -- Kitchen: ----------------------
+I, [2014-10-07T15:03:31.264852 #82321]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-07T15:03:32.042216 #82321]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T15:03:32.042509 #82321]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:03:32.052409 #82321]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T15:03:32.052585 #82321]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+E, [2014-10-07T15:03:32.659222 #82321] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-07T15:03:32.659279 #82321] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-07T15:03:32.659310 #82321] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2014-10-07T15:03:32.659357 #82321] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-07T15:03:32.659393 #82321] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:03:32.659424 #82321] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:03:32.659458 #82321] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-07T15:03:32.659482 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T15:03:32.659498 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T15:03:32.659514 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T15:03:32.659530 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T15:03:32.659545 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T15:03:32.659561 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T15:03:32.659577 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T15:03:32.659599 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T15:03:32.659617 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T15:03:32.659632 #82321] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T15:03:32.659649 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T15:03:32.659664 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T15:03:32.659681 #82321] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:03:32.659698 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T15:03:32.659712 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T15:03:32.659728 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T15:03:32.659741 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T15:03:32.659757 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T15:03:32.659772 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T15:03:32.659786 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T15:03:32.659800 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T15:03:32.659814 #82321] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:03:32.659830 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T15:03:32.659844 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T15:03:32.659861 #82321] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T15:03:32.659877 #82321] ERROR -- Kitchen: ----------------------
+I, [2014-10-07T15:04:55.118093 #82417]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-07T15:04:55.917126 #82417]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T15:04:55.917470 #82417]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:04:55.919861 #82417]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T15:04:55.920003 #82417]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+E, [2014-10-07T15:04:56.540914 #82417] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-07T15:04:56.540984 #82417] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-07T15:04:56.541014 #82417] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2014-10-07T15:04:56.541046 #82417] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-07T15:04:56.541078 #82417] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-10-07T15:04:56.541107 #82417] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Vagrant appears to be running in a Bundler environment. Your 
+existing Gemfile will be used. Vagrant will not auto-load any plugins
+installed with `vagrant plugin`. Vagrant will autoload any plugins in
+the 'plugins' group in your Gemfile. You can force Vagrant to take over
+with VAGRANT_FORCE_BUNDLER.
+STDERR: Bundler is using a binstub that was created for a different gem.
+This is deprecated, in future versions you may need to `bundle binstub vagrant-wrapper` to work around a system/bundle conflict.
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `require_relative': /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:217: syntax error, unexpected tPOW (SyntaxError)
+    def internal_install(plugins, update, **extra)
+                                            ^
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:298: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:315: class definition in method body
+/Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/bundler.rb:368: syntax error, unexpected keyword_end, expecting $end
+	from /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/vagrant-8f87a4bfcf2f/lib/vagrant/pre-rubygems.rb:19:in `<main>'
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2014-10-07T15:04:56.541136 #82417] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-07T15:04:56.541163 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2014-10-07T15:04:56.541183 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-10-07T15:04:56.541198 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2014-10-07T15:04:56.541219 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-10-07T15:04:56.541234 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/kitchen-vagrant-aba4e4304177/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-10-07T15:04:56.541249 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `public_send'
+E, [2014-10-07T15:04:56.541264 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `block in perform_action'
+E, [2014-10-07T15:04:56.541277 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `call'
+E, [2014-10-07T15:04:56.541291 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:408:in `block in synchronize_or_call'
+E, [2014-10-07T15:04:56.541307 #82417] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2014-10-07T15:04:56.541322 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:406:in `synchronize_or_call'
+E, [2014-10-07T15:04:56.541335 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:376:in `block in action'
+E, [2014-10-07T15:04:56.541350 #82417] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:04:56.541364 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:375:in `action'
+E, [2014-10-07T15:04:56.541377 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:347:in `perform_action'
+E, [2014-10-07T15:04:56.541389 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:298:in `create_action'
+E, [2014-10-07T15:04:56.541403 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:287:in `block in transition_to'
+E, [2014-10-07T15:04:56.541416 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `each'
+E, [2014-10-07T15:04:56.541431 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:286:in `transition_to'
+E, [2014-10-07T15:04:56.541444 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:152:in `verify'
+E, [2014-10-07T15:04:56.541456 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:181:in `block in test'
+E, [2014-10-07T15:04:56.541469 #82417] ERROR -- Kitchen: /Users/nkirkus/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-07T15:04:56.541493 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/instance.rb:177:in `test'
+E, [2014-10-07T15:04:56.541506 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `public_send'
+E, [2014-10-07T15:04:56.541521 #82417] ERROR -- Kitchen: /Users/nkirkus/pmd-repo/vendor/bundle/bundler/gems/test-kitchen-459238b88ccb/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2014-10-07T15:04:56.541536 #82417] ERROR -- Kitchen: ----------------------
+I, [2014-10-07T15:28:40.737406 #17689]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-07T15:39:52.435572 #27193]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-07T15:39:53.187541 #27193]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-07T15:39:53.190601 #27193]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:39:53.192977 #27193]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-10-07T15:39:53.193121 #27193]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-07T15:40:28.791701 #27193]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2014-10-07T15:43:29.022367 #27193]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1204>...
+I, [2014-10-07T15:43:29.035057 #27193]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1204>...
+I, [2014-10-07T15:43:29.042033 #27193]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-07T15:43:34.100931 #27193]  INFO -- Kitchen: -----> Kitchen is finished. (3m41.67s)
+I, [2014-10-08T11:12:26.435351 #41808]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-08T11:12:28.140820 #41808]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-10-08T11:12:28.142549 #41808]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-08T11:12:28.144267 #41808]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-10-08T11:12:28.144379 #41808]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-10-08T11:13:01.557487 #41808]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2014-10-08T11:14:39.005488 #41808]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1204>...
+I, [2014-10-08T11:14:39.017197 #41808]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1204>...
+I, [2014-10-08T11:14:39.023915 #41808]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-10-08T11:14:43.029602 #41808]  INFO -- Kitchen: -----> Kitchen is finished. (2m16.59s)

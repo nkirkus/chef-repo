@@ -1,6 +1,3 @@
-###
-
-
 package 'libaio1' do
   action :install
 end
@@ -20,20 +17,36 @@ link "/usr/lib64" do
   to "/usr/lib"
 end
 
-filename = "netvault-R2014APR29-SECRETARIAT-V10-Linux-Pure64-ClientOnly.tar.gz"
+src_filename = node[:netvault][:file]
+src_filepath = "#{Chef::Config['file_cache_path']}/#{src_filename}"
+extract_path = "#{Chef::Config['file_cache_path']}"
 
-remote_file "/root/#{filename}" do
-  source 'https://s3.amazonaws.com/pharmmd-public/' + filename
+remote_file src_filepath do
+  source node[:netvault][:url]
+  checksum node[:netvault][:checksum]
+  owner 'root'
+  group 'root'
+  mode '0644'
 end
 
-execute "untar-filename" do
-  command "yes | tar -xvzf /root/#{filename} -C /root/"
+bash 'extract_module' do
+  cwd ::File.dirname(src_filepath)
+  code <<-EOH
+    tar xzf #{src_filename} -C #{extract_path}
+    EOH
+  not_if { ::File.exists?("#{extract_path}/netvault") }
 end
 
-template "/root/netvault/responsefile" do
+template "#{extract_path}/netvault/responsefile" do
   source 'responsefile.erb'
+  variables(
+    :pkg_base => node[:netvault][:pkg_base],
+    :password => node[:netvault][:password],
+    :language => node[:netvault][:language],
+    :node_name => Chef::Config[:node_name]
+  )
 end
 
 execute "install-netvault" do
-  command "cd /root/netvault/; bash install responsefile"
+  command "cd #{extract_path}/netvault; bash install responsefile"
 end
